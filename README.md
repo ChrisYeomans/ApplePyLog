@@ -1,5 +1,7 @@
 ## ApplePyLog
 
+Install with ```pip install applepylog```
+
 A simple logging library for small projects.
 There are 4 Logging levels:
 * Error
