@@ -1,0 +1,7 @@
+build
+dist
+applepylog.egg-info
+.eggs
+.idea
+tests/test.txt
+test.txt
