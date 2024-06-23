@@ -1,8 +1,11 @@
 ## ApplePyLog
+[![pypi](https://img.shields.io/pypi/v/applepylog)](https://pypi.org/project/applepylog/)
+[![](https://img.shields.io/pypi/pyversions/applepylog)](https://pypi.org/project/applepylog/)
 
 Install with ```pip install applepylog```
 
 A simple logging library for small projects.
+
 There are 4 Logging levels:
 * Error
 * Info
