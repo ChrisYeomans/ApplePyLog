@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name='applepylog',
     packages=find_packages(include=['applepylog']),
-    version='0.1.3',
+    version='0.1.4',
     description='A simple logger for basic projects',
     long_description=long_description,
     long_description_content_type="text/markdown",

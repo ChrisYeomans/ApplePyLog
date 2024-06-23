@@ -1,7 +1,7 @@
 import sys
 
 import pytest
-from applepylog.logger import Logger, LogLevel
+from applepylog import Logger, LogLevel
 from io import StringIO
 from typing import TextIO
 
