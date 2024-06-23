@@ -19,7 +19,7 @@ This alternate writer also has its own log level that can be specified, also wit
 
 Basic Usage:
 ```python3
-from appleypylog import Logger, LogLevel
+from applepylog import Logger, LogLevel
 
 # Creates a logger to stdout
 _logger = Logger("Test Logger")
@@ -29,7 +29,7 @@ _logger.debug("test message") # doesnt log anything because default log level is
 
 Changing Log Level:
 ```python3
-from appleypylog import Logger, LogLevel
+from applepylog import Logger, LogLevel
 
 _logger = Logger("Test Logger", log_level=LogLevel.ERROR)
 _logger.info("test message")
@@ -37,7 +37,7 @@ _logger.info("test message")
 
 Changing writer:
 ```python3
-from appleypylog import Logger, LogLevel
+from applepylog import Logger, LogLevel
 import sys
 
 # Creates a logger to stderr
@@ -52,7 +52,7 @@ _other_logger.info("file test message")
 
 Using the alternate writer:
 ```python3
-from appleypylog import Logger, LogLevel
+from applepylog import Logger, LogLevel
 import sys
 
 file = open("./log_file.txt", "w+")
@@ -63,7 +63,7 @@ _logger.info("test message")
 
 Using the alternate writer with a different log level:
 ```python3
-from appleypylog import Logger, LogLevel
+from applepylog import Logger, LogLevel
 import sys
 
 file = open("./log_file.txt", "w+")
