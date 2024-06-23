@@ -3,5 +3,9 @@ dist
 applepylog.egg-info
 .eggs
 .idea
+applepylog/__pycache__
 tests/test.txt
 test.txt
+.pypirc
+publish.sh
+*.pyc

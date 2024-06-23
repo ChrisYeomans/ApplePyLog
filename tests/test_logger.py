@@ -118,7 +118,7 @@ class TestLogger:
         assert "INFO Test Logger, test message\n" == logged.out[27:]  # ignoring timestamp
 
     def test_alt_writer_info_level_info_logger(self, capsys):
-        _logger = _logger = Logger("Test Logger", LogLevel.INFO, sys.stdout, LogLevel.INFO, self.writer)
+        _logger = Logger("Test Logger", LogLevel.INFO, sys.stdout, LogLevel.INFO, self.writer)
         _logger.info("test message")
         self.writer.seek(0)
         logged = capsys.readouterr()
@@ -127,7 +127,7 @@ class TestLogger:
 
     def test_write_file_info_level_info_logger(self):
         file = open("./test.txt", "w+")
-        _logger = _logger = Logger("Test Logger", LogLevel.INFO, file)
+        _logger = Logger("Test Logger", LogLevel.INFO, file)
         _logger.info("test message")
         file.seek(0)
         assert "INFO Test Logger, test message\n" == file.read()[27:]  # ignoring timestamp
@@ -135,7 +135,7 @@ class TestLogger:
 
     def test_multi_write_file_info_level_logger(self):
         file = open("./test.txt", "w+")
-        _logger = _logger = Logger("Test Logger", LogLevel.INFO, file)
+        _logger = Logger("Test Logger", LogLevel.INFO, file)
         _logger.info("test message")
         _logger.info("other test message")
         file.seek(0)
@@ -144,7 +144,7 @@ class TestLogger:
         file.close()
 
     def test_different_log_level_writers(self, capsys):
-        _logger = _logger = Logger("Test Logger", LogLevel.ERROR, sys.stdout, LogLevel.INFO, self.writer)
+        _logger = Logger("Test Logger", LogLevel.ERROR, sys.stdout, LogLevel.INFO, self.writer)
         _logger.info("test message")
         self.writer.seek(0)
         logged = capsys.readouterr()
